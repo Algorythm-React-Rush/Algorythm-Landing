@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Rush</title>
+    <meta
+      name="description"
+      content="Turbocharging React JS Skills: Accelerate Your Frontend Development Mastery."
+    />
+    <meta property="og:title" content="React Rush" />
+    <meta
+      property="og:description"
+      content="Turbocharging React JS Skills: Accelerate Your Frontend Development Mastery."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="/src/img/shantanu-favicon.jpg"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link rel="stylesheet" href="../blog.css" />
+    <link rel="stylesheet" href="./css/blog-styles.css" />
+  </head>
+
+  <body class="bg-darktheme" id="body">
+    <header class="sticky top-0 bg-darktheme z-50 md:pb-[12px] overflow-hidden">
+      <nav
+        class="flex items-center justify-between container mt-0 md:mt-[12px] relative py-1 xl:py-0"
+      >
+        <div>
+          <a href="#!" class="relative z-[999] text-white uppercase">
+            <img
+              src="/src/img/shantanu-logo.jpg"
+              alt="influencers logo"
+              loading="lazy"
+              width="159"
+              height="32"
+              class="flex"
+            />
+          </a>
+        </div>
+
+        <div class="nav-area">
+          <button class="hamburger relative z-[999]">
+            <span class="!bg-white/80"></span>
+            <span class="!bg-white/80"></span>
+            <span class="!bg-white/80"></span>
+          </button>
+          <ul class="md:flex items-center !bg-darktheme">
+            <li class="mb-0 mr-[56px]">
+              <a class="nav-link text-white/80" href="/">React Rush</a>
+            </li>
+            <li class="mb-0 button-wrapper">
+              <a
+                href="https://algorythm.rpy.club/auth"
+                class="button py-[12px] px-[20px] bg-primary min-w-[160px] inline-block text-white text-16 leading-[1.5]"
+              >
+                <div class="relative overflow-hidden">
+                  <span class="button-content">Log in</span>
+                  <span class="button-content-hover">Log in</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="blog-container" id="blog-container">
+      <img
+        src="https://i.ibb.co/q7qgZBD/Unboxing-and-Review-2.png"
+        class="blog-banner"
+      />
+      <div class="blog">
+        <div class="blog-title">Is React JS Faster Than Browser DOM</div>
+
+        <div>
+          <div class="author">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQHhIV0-7o1TGw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727032805329?e=1733356800&v=beta&t=qVbKCMq6wydjBfx2S700kdc3NF6nXP1dQXFZYHO8E5A"
+              class="author-image"
+            />
+            <div class="author-details">
+              <div class="author-name">
+                <a
+                  href="https://www.linkedin.com/in/shaantanukulkarni/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Shaantanu Kulkarni
+                </a>
+              </div>
+              <div class="author-date">Sep 20, 2021</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="../assets/imgs/time.svg" />
+            <div class="time-to-read-text">5 min read</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is TLDR Section -->
+      <section class="blog-tldr">
+        <div class="blog-tldr-title">TL;DR</div>
+        <div class="blog-tldr-content">
+          React JS is faster than the browser DOM. React JS uses a virtual DOM
+          to update the actual DOM. The virtual DOM is a lightweight copy of the
+          actual DOM. React JS compares the virtual DOM with the actual DOM and
+          updates only the changed elements. This makes React JS faster than the
+          browser DOM.
+        </div>
+      </section>
+
+      <section class="blog-content">
+        <div class="section">
+          <h2 class="title">
+            Ever wondered why React's Virtual DOM is considered faster?
+          </h2>
+        </div>
+
+        <div class="flex-container">
+          <div class="card">
+            <div class="number-badge">1</div>
+            <p class="text">
+              React updates only the elements that actually need changing. So,
+              if you tweak something in your app, React figures out which parts
+              of the webpage have to be updated and focuses only on them.
+            </p>
+            <p class="text text-muted">
+              But here's the catch: modern browsers also do this to some extent.
+              They're pretty smart at updating only what's necessary. So, why is
+              React's way any better?
+            </p>
+          </div>
+          <div class="card">
+            <div class="number-badge">2</div>
+            <p class="text">
+              React also groups these updates together, doing them all in one
+              go. This means the real webpage is updated just once, even if
+              there are multiple changes happening. This can make a big
+              difference, especially if you've got a lot of stuff going on in
+              your app.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="title">But, here come the questions:</h3>
+          <div class="question">
+            <div class="icon-circle">?</div>
+            <p class="text">
+              Aren't browsers already pretty good at updating only the bits of a
+              webpage that change? For example, if you tweak some text, the
+              browser usually just changes that text without redoing everything.
+              So, why does React get the credit for this?
+            </p>
+          </div>
+          <div class="question">
+            <div class="icon-circle">?</div>
+            <p class="text">
+              How exactly does React bundle up these updates? Sure, eventually,
+              React still has to use the regular tools browsers give it to
+              update the webpage. But somehow, React manages to do it in a way
+              that's more efficient than if we just did it ourselves. How does
+              that work?
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="title">Diving into the Solutions of these questions</h2>
+          <h3 class="subtitle">
+            Unveiling the Magic Behind React's Virtual DOM: Ease vs. Speed
+          </h3>
+          <p class="text">
+            In the realm of modern web development, React stands tall as one of
+            the most popular JavaScript libraries, renowned for its efficiency
+            and declarative approach to building user interfaces. At the heart
+            of React's performance lies its Virtual DOM, a concept often
+            celebrated but sometimes misunderstood. Let's delve into the
+            mechanics of React's Virtual DOM and debunk some common myths
+            surrounding its prowess.
+          </p>
+
+          <img
+            class="image"
+            src="https://media.licdn.com/dms/image/D5612AQHrTcE_Vu_qjQ/article-cover_image-shrink_600_2000/0/1694674429966?e=2147483647&v=beta&t=veXPTTqusbyai02Fix6ZscKdywGztVxSlShgv9Uab1U"
+          />
+          <div id="course-link-virtual-dom"></div>
+        </div>
+
+        <div class="section">
+          <h3 class="subtitle">
+            Let us first look at React as a solution to our problem
+          </h3>
+          <h4 class="subheading">Why do we need React in first place?</h4>
+          <p class="text">
+            Imagine you're building your own web application. Among other
+            features, it allows users to 'star' a post, similar to favoriting or
+            liking a post on social media platforms. This simple action,
+            however, can impact multiple elements on your webpage. The star
+            count on the post itself needs to be updated, but perhaps there's
+            also a 'starred posts' counter elsewhere on the page, or a 'top
+            starred posts' section that needs to reflect this change.
+          </p>
+          <p class="text">
+            As your application grows in complexity, managing all these
+            interconnected elements becomes a daunting task. You might find
+            yourself constantly updating parts of the page that need to reflect
+            these changes, and it's easy to miss something. If another developer
+            joins your project, they might not even be aware of all the places
+            that need to be updated in response to a user action.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3 class="subtitle">
+            React's Approach: Virtual DOM and Efficient Updates
+          </h3>
+          <div class="content-with-image">
+            <div class="text-content">
+              <p class="text">
+                React uses a Virtual DOM, a lightweight in-memory representation
+                of the actual DOM. This approach allows developers to write code
+                as if they're re-rendering the entire page on each update,
+                without the performance hit of manipulating the real DOM
+                directly.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-steps">
+            <h4 class="subheading">
+              When a state change occurs (e.g., a user stars a post), React:
+            </h4>
+            <ol class="step-list">
+              <li class="step-item">
+                Creates a new Virtual DOM reflecting the updated state
+              </li>
+              <li class="step-item">
+                Compares it with the previous Virtual DOM (a process called
+                'diffing')
+              </li>
+              <li class="step-item">Identifies the exact changes needed</li>
+              <li class="step-item">
+                Applies only these necessary changes to the real DOM
+              </li>
+            </ol>
+          </div>
+
+          <div class="highlight-box">
+            <p class="text">
+              This method is efficient because it minimizes direct DOM
+              manipulation, which can be slow and resource-intensive. It also
+              simplifies development by allowing programmers to focus on the
+              application's logic rather than managing DOM updates manually.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="subtitle">The Efficiency of React's Virtual DOM</h3>
+          <p class="text">
+            While React's Virtual DOM is often praised for its speed, it's
+            important to understand that its primary advantage lies in developer
+            productivity and code maintainability rather than raw performance.
+          </p>
+
+          <div class="feature-cards">
+            <div class="feature-card">
+              <h4 class="subheading">1. Batching Updates</h4>
+              <p class="text">
+                One of React's key optimizations is update batching. Instead of
+                immediately applying every single change to the real DOM, React
+                groups multiple updates together. This means that even if your
+                component's state changes multiple times in a single update
+                cycle, React will only update the actual DOM once.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h4 class="subheading">2. Reconciliation</h4>
+              <p class="text">
+                React's reconciliation process is highly optimized. When
+                comparing the new Virtual DOM with the previous one, React uses
+                heuristics to minimize the number of comparisons it needs to
+                make. This process, often referred to as "diffing", is what
+                allows React to efficiently determine what parts of the UI need
+                to be updated.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h4 class="subheading">3. Developer Experience</h4>
+              <p class="text">
+                Perhaps the most significant advantage of React's approach is
+                how it simplifies the developer's mental model. Instead of
+                manually tracking which parts of the UI need to be updated in
+                response to data changes, developers can simply describe what
+                the UI should look like for any given state, and React takes
+                care of the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="subtitle">Comparing React to Direct DOM Manipulation</h3>
+          <p class="text">
+            While modern browsers have become quite efficient at DOM
+            manipulation, managing complex UIs with frequent updates can still
+            be challenging when working directly with the DOM. Here's why
+            React's approach can be advantageous:
+          </p>
+          <div class="comparison-table">
+            <div class="comparison-item">
+              <h4 class="subheading">Abstraction</h4>
+              <p class="text">
+                React abstracts away the complexities of DOM manipulation,
+                allowing developers to focus on the application logic rather
+                than the intricacies of updating the UI efficiently.
+              </p>
+            </div>
+            <div class="comparison-item">
+              <h4 class="subheading">Consistency</h4>
+              <p class="text">
+                React's declarative approach ensures that the UI is always
+                consistent with the current application state, reducing the
+                likelihood of bugs caused by missed updates.
+              </p>
+            </div>
+            <div class="comparison-item">
+              <h4 class="subheading">Optimizations</h4>
+              <p class="text">
+                React includes various built-in optimizations that would be
+                tedious to implement manually, such as update batching and
+                efficient reconciliation algorithms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add this after the last <div class="section"> -->
+
+        <div class="section">
+       <h3 class="title">Diffing is a solution for algorithm used in React and not Browser</h3>
+          <div class="info-box">
+            <p class="text">
+              It's essential to understand that the "diffing" process, a critical part of React's Virtual DOM, primarily addresses a problem specific to React's rendering strategy rather than being a universal concern in web development.
+            </p>
+            <p class="text">
+              React's approach involves re-rendering the entire UI whenever there's a state modification in a component. In the absence of something like the Virtual DOM, this could lead to significant inefficiency as it would involve vast amounts of unnecessary DOM manipulations. The diffing process comes into play to identify and apply only the necessary changes to the real DOM, thus optimising the rendering process.
+            </p>
+            <p class="text">
+              In contrast, vanilla JavaScript doesn't inherently face this problem. In traditional DOM manipulation without a library like React, developers typically update only the specific parts of the DOM that need changing in response to user interactions or data modifications. As such, there's no need for an equivalent to the diffing process in vanilla JavaScript.
+            </p>
+            <p class="text">
+              Therefore, it's important to remember that React's diffing process and the Virtual DOM are solutions tailored to the library's unique rendering approach, rather than universally applicable optimisations in all web development contexts.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="title">Debunking Common Misconceptions</h2>
+          
+          <h3 class="subtitle">Myth 1: React Makes DOM Manipulation Faster</h3>
+          <p class="text">
+            Contrary to popular belief, React doesn't inherently speed up DOM manipulation. Modern browsers are adept at updating specific portions of the DOM efficiently, even without React's intervention. React's real strength lies in its ability to orchestrate the rendering process effectively through the Virtual DOM, minimising unnecessary updates and enhancing developer productivity.
+          </p>
+
+          <h3 class="subtitle">Myth 2: React Batches Updates for Performance Gains</h3>
+          <p class="text">
+            While React does facilitate batching updates, primarily through its reconciliation algorithm, it doesn't inherently make operations faster. Manually batching reads and writes in vanilla JavaScript can yield similar results. React's value lies in streamlining development workflows and abstracting away low-level DOM manipulation, allowing developers to focus on building robust applications without micromanaging performance concerns.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="title">Conclusion: Ease vs. Speed</h2>
+          <p class="text">
+            In essence, React isn't a silver bullet for performance optimization. It's a tool that prioritises developer experience and productivity. 
+          </p>
+          
+          <div class="quote-box">
+            <p class="quote-text">
+              "React is not magic. Just like you can drop into assembler with C and beat the C compiler, you can drop into raw DOM operations and DOM API calls and beat React if you wanted to. However, using C or Java or JavaScript is an order of magnitude performance improvement because you don't have to worry...about the specifics of the platform. With React you can build applications without even thinking about performance and the default state is fast."
+            </p>
+            <p class="quote-author">- Pete Hunt, JSConf presentation</p>
+          </div>
+          
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x7cQ3mrcKaY?start=1345" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <p class="text highlight">
+            While it doesn't necessarily outpace raw DOM operations in terms of speed, its intuitive abstraction and efficient rendering pipeline empower developers to craft high-performance web applications without dwelling on the intricacies of the underlying platform.
+          </p>
+        </div>
+
+    
+    </div>
+
+    <footer>
+      <section
+        id="contact"
+        class="pt-[40px] md:pt-[73px] pb-[90px] md:pb-[58px] bg-primary scrollspy-section"
+      >
+        <div class="container text-left md:text-center">
+          <h2
+            class="text-white text-20 leading-[1.3] font-semibold mb-1 md:mb-2"
+          >
+            React Rush
+          </h2>
+          <p class="text-18 text-white/50 leading-[1.44] font-normal">
+            &copy; 2024 All Rights Reserved.
+          </p>
+          <div
+            class="flex items-start md:items-center justify-center md:flex-row flex-col mb-[83px] md:mb-[52px] mt-[59px] md:mt-[79px]"
+          >
+            <p
+              class="mb-3 md:mb-0 mr-[45px] text-16 leading-none text-white font-medium"
+            >
+              Terms of service
+            </p>
+            <p
+              class="mb-3 md:mb-0 mr-[45px] text-16 leading-none text-white font-medium"
+            >
+              Privacy Policy
+            </p>
+            <p class="mb-0 md:mb-0 text-16 leading-none text-white font-medium">
+              Code of conduct
+            </p>
+          </div>
+          <ul class="flex items-center justify-start md:justify-center">
+            <!-- <li class="mb-0 mr-[33px]">
+            <a href="#!">
+              <img loading="lazy" width="26" height="26" src="/src/img/rigi/footer/youtube.svg" alt="youtube" />
+            </a>
+          </li> -->
+            <li class="mb-0 mr-[33px]">
+              <a href=" https://www.facebook.com/shaantanu314/">
+                <img
+                  loading="lazy"
+                  width="26"
+                  height="26"
+                  src="/src/img/rigi/footer/fb.svg"
+                  alt="facebook"
+                />
+              </a>
+            </li>
+            <li class="mb-0 mr-[33px]">
+              <a
+                href="https://www.instagram.com/_shaantanukulkarni?igsh=MWRwcDY5MmtjYzQ4bA=="
+              >
+                <img
+                  loading="lazy"
+                  width="26"
+                  height="26"
+                  src="/src/img/rigi/footer/insta.svg"
+                  alt="instagram"
+                />
+              </a>
+            </li>
+            <li class="mb-0">
+              <a href="https://www.linkedin.com/in/shaantanukulkarni/">
+                <img
+                  loading="lazy"
+                  width="26"
+                  height="26"
+                  src="/src/img/rigi/footer/linkedin.svg"
+                  alt="linkedin"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="/src/js/tiny-slider.js"></script>
+    <script src="/src/js/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script>
+      VANTA.TOPOLOGY({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: 0x0,
+        color: 0x7043e3,
+      });
+    </script>
+
+    <!-- Add this script tag before the closing </body> tag -->
+    <script src="../blog.js"></script>
+    <script>
+      createModals();
+    </script>
+  </body>
+</html>
